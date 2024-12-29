@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Center content */
+}
+
+/* Header Styling */
+header {
+    background-color: #f6dc6d; /* Brand color */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-height: 100px; /* Adjust logo size */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 0 20px;
+}
+.unity{
+    text-align: center; /* Centers the text horizontally */
+    font-family: 'lobster', sans-serif; /* Stylish font */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 48px; /* Adjust font size */
+    color: #333; /* Font color */
+    letter-spacing: 2px; /* Adds space between letters for a stylish effect */
+    text-transform: uppercase; /* Converts text to uppercase */
+    margin: 0; /* Removes any default margin */
+    padding: 40px 0; /* Adds some space above and below the text */
+}
+
+/* Adjusting Home Section Image */
+#home img {
+    width: 80%; /* Reduced size of the image */
+    max-width: 1000px; /* Limits the max width */
+    height: auto;
+    margin: 20px auto; /* Centers the image */
+    display: block; /* Ensures image is centered */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Headers with Brand Color */
+.highlight {
+    color: #f6dc6d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Centering the Values Section */
+.values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers vertically */
+    align-items: center;  /* Centers horizontally */
+    margin-top: 20px;
+    font-size: 18px;  /* Adjusted font size */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  /* Centered text inside each value item */
+}
+
+.value-item {
+    margin-bottom: 20px; /* Added spacing between each item */
+    width: 100%;
+}
+
+.value-title {
+    font-weight: bold;
+    color: #f6dc6d;
+    font-size: 20px; /* Increased font size for titles */
+}
+
+.value-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Gallery Section */
+#gallery {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items in each row */
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 300px; /* Limits the size of images */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Social Media Links */
+.social-media a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #f6dc6d;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .gallery-item {
+        width: 48%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-height: 50px; /* Adjust logo size for smaller screens */
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}
